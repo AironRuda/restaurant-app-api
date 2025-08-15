@@ -14,7 +14,6 @@ app.use(
   cors({
     origin: [
       'http://localhost:3000',
-      'https://restaurant-app-git-main-airon-projects.vercel.app/',
       'https://restaurant-app-livid-rho.vercel.app',
     ],
     credentials: true,
