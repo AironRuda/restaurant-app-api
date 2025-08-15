@@ -16,5 +16,6 @@
     "env": {
       "NODE_ENV": "production"
     }
-  }
+  },
+  "include": ["node_modules/.prisma"]
 }

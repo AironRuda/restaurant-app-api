@@ -25,6 +25,10 @@ app.use(express_1.default.json());
 app.use('/api/products', productRoutes_1.default);
 app.use('/api/users', userRoutes_1.default);
 app.use('/api/orders', orderRoutes_1.default);
+// Ruta de prueba
+app.get('/api/health', (req, res) => {
+    res.status(200).json({ status: 'ok', message: 'API is running' });
+});
 // Global error handler (should be after routes)
 app.use(errorHandler_1.errorHandler);
 exports.default = app;
