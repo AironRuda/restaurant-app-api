@@ -9,6 +9,7 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "outDir": "dist",
+    "rootDir": "./src",
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": false,
@@ -16,5 +17,5 @@
     "strictNullChecks": true,
     "target": "es2017"
   },
-  "include": ["src/**/*.ts", "src/**/*.json"],
+  "include": ["src/**/*.ts", "src/**/*.json"]
 }
