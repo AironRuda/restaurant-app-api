@@ -12,7 +12,10 @@ app.use(express.json());
 // Configuración de CORS
 app.use(
   cors({
-    origin: 'http://localhost:3000', // Asegúrate de que coincida con tu frontend
+    origin: [
+      'http://localhost:3000',
+      'https://restaurant-app-git-main-airon-projects.vercel.app/',
+    ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
