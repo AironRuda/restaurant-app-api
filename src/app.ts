@@ -15,6 +15,7 @@ app.use(
     origin: [
       'http://localhost:3000',
       'https://restaurant-app-git-main-airon-projects.vercel.app/',
+      'https://restaurant-app-livid-rho.vercel.app',
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
