@@ -27,6 +27,11 @@ app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
 
+// Ruta de prueba
+app.get('/api/health', (req, res) => {
+  res.status(200).json({ status: 'ok', message: 'API is running' });
+});
+
 // Global error handler (should be after routes)
 app.use(errorHandler);
 
