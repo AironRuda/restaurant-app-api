@@ -6,12 +6,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && prisma generate",
+    "build": "prisma generate && tsc",
     "migrate:deploy": "prisma migrate deploy",
     "start": "node dist/server.js",
     "dev": "nodemon --watch \"src/**/*.ts\" --exec \"ts-node\" src/server.ts",
     "lint": "eslint 'src/**/*.ts'",
-    "vercel-build": "tsc && prisma generate && prisma migrate deploy"
+    "vercel-build": "prisma generate && tsc && prisma migrate deploy"
   },
   "engines": {
     "node": "22.x"
